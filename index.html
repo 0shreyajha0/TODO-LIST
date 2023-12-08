@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="body-content">
+      <section class="navbar">
+        <div class="container">
+          <div class="logo">
+            <h1>Todo List</h1>
+          </div>
+          <nav>
+            <ul>
+              <li id="sync-now-btn" class="sync-now">
+                <p id="sync-now-p">
+                  Sync now <i id="sync-spinner" class=""></i>
+                </p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="new-todo">
+        <div class="new-todo-hoc">
+          <div class="container">
+            <form class="todo-form">
+              <input
+                class="todo-title"
+                autocomplete="off"
+                type="text"
+                id="todo-title"
+                name="todoTitle"
+                placeholder="Your Title.."
+              />
+              <textarea
+                class="todo-content"
+                id="todo-content"
+                name="todoContent"
+                placeholder="Write something.."
+              ></textarea>
+              <input
+                class="submit-btn"
+                id="submit-btn"
+                type="submit"
+                value="Submit"
+              />
+            </form>
+          </div>
+          <img
+            class="new-todo-img"
+            src="/images/undraw_online_organizer_ofxm.svg"
+            alt="Add new todo section"
+          />
+        </div>
+      </section>
+
+      <section class="todo-list">
+        <div class="container">
+          <div class="todo-items" id="todo-items">
+            <div class="empty-div" id="empty-div">
+              <img
+                id="empty-img"
+                src="images/undraw_empty_xct9.svg"
+                alt="Empty Todo List"
+              />
+              <p>Create new Todo's</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="footer">
+      <div class="container">
+        <p>Made with ❤️️ in India</p>
+      </div>
+    </section>
+
+    <script src="/script/main.js"></script>
+  </body>
+</html>
